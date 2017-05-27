@@ -12,33 +12,33 @@
             <br>
         </div>
     </div>
+    
+
     <div class="row">
-           
-{{#each items }}
-                <div class="panel panel-default">
-                    <div class="panel-heading">
+    {{#each items }}        
+    <div class="panel panel-default">
+            <div class="panel-heading">
                     <h4>{{this.title}}</h4>
-
-                    <form method="GET" action="/save/:_id">
-                            <button type="submit" class="btn-lg btn-primary submit center-block" id="add-new-article">Save</button>
-                            </form>
-                    </div>
-                    
-                            <p>
-                                 <a href="{{this.link}}">{{this.link}}</a>
-                            </p>
-                            
                 </div>
-        {{/each}}
+
+          
+                <p>
+                 <a href="{{this.link}}">{{this.link}}</a>
+                </p>
+                <form method="GET" action="/save/:_id">
+                    <button type="submit" class="btn-sm btn-primary submit center-block" id="add-new-article">Save</button>
+                 </form>
+                {{/each}}
+
+    </div> 
+        </div>
+          
+         
+    
+     
+        
+                            
+    </div>
 
     </div>
-                        {{!-- <div class="col-md-8"> --}}
-
-            {{!-- <div class="col-md-4"> --}}
-                    
-
-{{!--             </div>
- --}}
-    </div>
-
-</div>
+    

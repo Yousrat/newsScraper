@@ -19,15 +19,20 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                     <h4>{{this.title}}</h4>
-                    {{!-- <form method="POST" action="/notes/:_id"> --}}
-                            <button type="submit" class="btn-lg btn-primary center-block" id ="add-new-note">Add Note</button>
-                            {{!-- </form> --}}
+                            
                     </div>
                     
                             <p>
                                  <a href="{{this.link}}">{{this.link}}</a>
                             </p>
-                            
+                            <textarea type="text" class="center-block" name="body" id="notebox">Write Note Here</textarea>
+
+                        <form method="POST" action="/notes/:_id">
+                         <button type="submit" class="btn-lg btn-primary center-block" id ="add-new-note">Add Note</button>
+                        </form>
+
+                         
+   
                 </div>
         {{/each}}
 

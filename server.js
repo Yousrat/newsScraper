@@ -146,6 +146,10 @@ app.get("/save/:_id", function(req, res) {
           console.log(found);
       //res.json(found);
       db.savedArticle.save({found});
+      notifier.notify({
+  'title': 'Saving article to Saved Articles tab',
+  'message': 'Article Saved!'
+});
       // db.savedArticle.save({
       //      "_id": mongojs.ObjectId(req.params.id)},
       //     title: title,

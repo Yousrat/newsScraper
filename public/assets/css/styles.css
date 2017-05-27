@@ -5,7 +5,9 @@
   font-size: 24px;
   font-family: 'Shrikhand', cursive;
 }
-
+#notebox{
+width: 400px;
+}
 .jumbotron {
   background-color: #1da1f2;
   color: white;
