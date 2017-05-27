@@ -1,0 +1,27 @@
+{
+  "name": "news-scraper",
+  "version": "1.0.0",
+  "description": "scraping news, storing them into mongodb then rendering them",
+  "main": "srever.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yousrat/newsScraper.git"
+  },
+  "keywords": [
+    "web",
+    "scraping",
+    "mongodb",
+    "mongoose",
+    "cheerio",
+    "handelbars"
+  ],
+  "author": "Yousra elbanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yousrat/newsScraper/issues"
+  },
+  "homepage": "https://github.com/Yousrat/newsScraper#readme"
+}
