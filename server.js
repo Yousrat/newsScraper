@@ -145,7 +145,7 @@ app.get("/save/:_id", function(req, res) {
     else{
           console.log(found);
       //res.json(found);
-      db.savedArticle.save(found);
+      db.savedArticle.save({found});
       // db.savedArticle.save({
       //      "_id": mongojs.ObjectId(req.params.id)},
       //     title: title,
