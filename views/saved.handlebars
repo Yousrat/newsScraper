@@ -19,15 +19,13 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                     <h4>{{this.title}}</h4>
-                            
                     </div>
-                    
                             <p>
-                                 <a href="{{this.link}}">{{this.link}}</a>
+                                <a href="{{this.link}}">{{this.link}}</a>
                             </p>
-                            <textarea type="text" class="center-block" name="body" id="notebox">Write Note Here</textarea>
+                            <textarea type="text" class="center-block" name="noteBody" id="notebox">Write Your Note Here</textarea>
 
-                        <form method="POST" action="/notes/:_id">
+                        <form method="POST" action="/notes/:note">
                          <button type="submit" class="btn-lg btn-primary center-block" id ="add-new-note">Add Note</button>
                         </form>
 
@@ -37,13 +35,7 @@
         {{/each}}
 
     </div>
-                        {{!-- <div class="col-md-8"> --}}
-
-            {{!-- <div class="col-md-4"> --}}
-                    
-
-{{!--             </div>
- --}}
+                       
     </div>
 
 </div>
