@@ -136,7 +136,7 @@ app.get("/save/:_id", function(req, res) {
     }
     // Otherwise, send the doc to the browser as a json object
     else {
-      res.json(doc);
+     // res.json(doc);
     }
   });
    notifier.notify({
