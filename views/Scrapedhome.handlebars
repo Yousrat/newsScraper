@@ -4,15 +4,13 @@
      <ul class="nav nav-tabs">
                 <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
                 <li><a href="/savedarticles"><span class="glyphicon glyphicon-user"></span> Saved Articles</a></li>
-
     </ul>
-
+    
         <div class="col-sm-8 col-sm-offset-2">
             <p class="cool-font text-center">{{title}}</p>
             <br>
         </div>
     </div>
-    
 
     <div class="row">
     {{#each items }}        
@@ -20,8 +18,6 @@
             <div class="panel-heading">
                     <h4>{{this.title}}</h4>
                 </div>
-
-          
                 <p>
                  <a href="{{this.link}}">{{this.link}}</a>
                 </p>
@@ -31,14 +27,7 @@
                 {{/each}}
 
     </div> 
-        </div>
-          
-         
-    
-     
-        
-                            
+        </div>                       
     </div>
-
     </div>
     
